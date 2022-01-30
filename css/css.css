@@ -9,6 +9,7 @@
       --main-btn: #ff2625;
       --main-btn-hvr: #fffafb;
       --main-hdr: #3a1212;
+      --text-main: 2rem;
 }
 html {
       background: #fffafb;
@@ -61,7 +62,7 @@ a {
       .wrapper {
             flex-wrap: wrap;
             padding: 0;
-            margin-bottom: 4rem;
+            margin: 0 2rem 3rem;
             max-width: 95vw;
       }
       .logo {
@@ -136,7 +137,7 @@ a {
             z-index: 20;
       }
       li a {
-            font-size: 2rem;
+            font-size: var(--text-main);
             text-decoration: none;
             display: flex;
 
@@ -239,7 +240,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: bold;
-            font-size: 2.4rem;
+            font-size: var(--text-main);
             line-height: 120%;
 
             border: 1px solid #e1e1e1;
@@ -270,7 +271,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.2rem;
+            font-size: var(--text-main);
             line-height: 120%;
 
             text-align: center;
@@ -317,14 +318,13 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 5rem;
+            font-size: calc(2 * var(--text-main));
             line-height: 160%;
             color: #837171;
             position: relative;
             box-sizing: border-box;
             cursor: pointer;
             transform-origin: left;
-            text-shadow: 4px 2px 6px rgba(0,0,0,0.36);
       }
       .link::after {
             content: "";
@@ -360,6 +360,7 @@ a {
             text-shadow: 1px 1px 3px #000;
             text-align: center;
       }
+     
 
       .subheader {
             font-family: Josefin Sans;
@@ -371,18 +372,18 @@ a {
 
             padding-bottom: 2.8rem;
       }
-      .container__header-left .subheader::after {
-            /*       background: url("icon/vector1.png") no-repeat; */
-      }
       .header {
             font-family: Josefin Sans;
             font-style: normal;
             font-weight: bold;
-            font-size: 4.4rem;
+            font-size: calc(2 * var(--text-main));
             line-height: 110%;
             color: var(--main-hdr);
             text-align: center;
             margin-bottom: 1rem;
+      }
+      .instr__header{
+            margin: 0 1.5rem;
       }
       .header__main-header {
             font-size: 8rem;
@@ -401,7 +402,7 @@ a {
             border: 1px solid var(--main-btn);
             width: 17rem;
             justify-content: center;
-            font-size: 2.2rem;
+            font-size: var(--text-main);
             box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
             margin-bottom: 1rem;
       }
@@ -435,17 +436,16 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: bold;
-            font-size: 2.4rem;
+            font-size: var(--text-main);
             line-height: 160%;
             color: #000000;
-            /*      background-color: inherit; */
       }
       .pics__par {
             display: block;
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
+            font-size: var(--text-main);
             line-height: 160%;
 
             background-color: inherit;
@@ -454,7 +454,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 2rem;
+            font-size: var(--text-main);
             line-height: 160%;
             font-style: italic;
 
@@ -469,17 +469,21 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.2rem;
+            font-size: var(--text-main);
             line-height: 160%;
             color: var(--par-clr);
             text-align: justify;
             margin-bottom: 2.2rem;
+      }
+      .art .par, .footer__par{
+            margin: 0 1.5rem;
       }
       .rep-container__right .pics__header,
       .rep-container__right .pics__par {
             display: flex;
             justify-content: flex-start;
       }
+
       .mail {
             min-width: 80vw;
             min-height: 5rem;
@@ -488,13 +492,14 @@ a {
             border: 2px solid #837171;
             border-radius: 15rem;
             text-align: center;
+            font-size: var(--text-main);
       }
       .btn__sbs {
             margin: 0 auto;
       }
 
       .footer .link {
-            font-size: 1rem;
+            font-size: calc(0.5 * var(--text-main));
       }
       .footer__smm {
             display: flex;
@@ -506,7 +511,7 @@ a {
             border-radius: 50%;
             margin: auto;
             color: var(--main-btn);
-            font-size: 2rem;
+            font-size: var(--text-main);
             box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
       }
       .footer__smm-logo {
@@ -526,7 +531,7 @@ a {
             box-shadow: #d8cccc 2px 2px;
       }
       .footer__logo-text {
-            font-size: 3rem;
+            font-size: var(--text-main);
             font-weight: 700;
             padding-left: 5rem;
       }
@@ -535,16 +540,22 @@ a {
             justify-content: space-between;
             margin: 0 2rem 2rem;
       }
+      .footer__menu ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+      }
       .footer__menu:not(:last-child) {
             border-bottom: solid 2px #ebbcb8;
       }
       .footer__menu-head {
-            font-size: 2.5rem;
+            font-size: var(--text-main);
+            padding-top: 0.45rem;
       }
       .footer .link {
             padding: 0;
             margin: 0;
-            font-size: 2rem;
+            font-size: var(--text-main);
             justify-self: flex-end;
       }
       .footer__point {
@@ -552,11 +563,21 @@ a {
             padding: 0;
             text-align: right;
       }
+      .footer .side_container{
+            margin:0 0 3rem;
+      }
 }
 
 /* десктоп-представление */
 
 @media screen and (min-width: 800px) {
+
+      .wrapper {
+            flex-wrap: wrap;
+            padding: 0;
+            margin-bottom: 5rem;
+            max-width: 95vw;
+      }
       /* хэдер */
 
       .container__header {
@@ -566,6 +587,7 @@ a {
             padding: 0 0 23rem 12.2rem;
             max-width: 138.5rem;
             width: 100%;
+            flex-wrap: nowrap;
       }
       .side_container {
             display: flex;
@@ -602,7 +624,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.4rem;
+            font-size: var(--text-main);
             line-height: 160%;
             color: #837171;
             position: relative;
@@ -665,7 +687,7 @@ a {
             font-family: Josefin Sans;
             font-style: normal;
             font-weight: 600;
-            font-size: 2.6rem;
+            font-size: calc(1.5 * var(--text-main));
             line-height: 160%;
             color: var(--main-btn);
 
@@ -678,7 +700,7 @@ a {
             font-family: Josefin Sans;
             font-style: normal;
             font-weight: bold;
-            font-size: 4.4rem;
+            font-size: calc(2 * var(--text-main));
             line-height: 110%;
             color: var(--main-hdr);
             text-align: start;
@@ -693,7 +715,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.2rem;
+            font-size: var(--text-main);
             line-height: 160%;
             color: var(--par-clr);
             text-align: justify;
@@ -711,7 +733,7 @@ a {
             border: 1px solid var(--main-btn);
             width: 20rem;
             justify-content: center;
-            font-size: 2.2rem;
+            font-size: var(--text-main);
             box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
       }
       .doi_tuong {
@@ -771,7 +793,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: bold;
-            font-size: 2.4rem;
+            font-size: var(--text-main);
             line-height: 120%;
 
             border: 1px solid #e1e1e1;
@@ -818,7 +840,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: bold;
-            font-size: 2.4rem;
+            font-size: var(--text-main);
             line-height: 120%;
 
             text-align: center;
@@ -844,7 +866,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.2rem;
+            font-size: var(--text-main);
             line-height: 120%;
 
             text-align: center;
@@ -858,7 +880,7 @@ a {
             height: 5rem;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.2rem;
+            font-size:var(--text-main);
             line-height: 120%;
             font-family: Alegreya;
       }
@@ -984,7 +1006,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: bold;
-            font-size: 2.4rem;
+            font-size: var(--text-main);
             line-height: 160%;
             color: #000000;
             /*      background-color: inherit; */
@@ -994,7 +1016,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
+            font-size: var(--text-main);
             line-height: 160%;
 
             background-color: inherit;
@@ -1050,7 +1072,7 @@ a {
             font-family: Josefin Sans;
             font-style: italic;
             font-weight: normal;
-            font-size: 22px;
+            font-size: var(--text-main);
             line-height: 160%;
 
             color: #504747;
@@ -1108,7 +1130,7 @@ a {
             height: 7.6rem;
             background: #ffffff;
             border-radius: 3.6rem;
-            font-size: 2rem;
+            font-size: var(--text-main);
             padding-left: 4rem;
       }
 
@@ -1118,6 +1140,7 @@ a {
             justify-content: space-between;
             margin: 0 4rem 6rem;
       }
+    
       .footer__nav {
             min-width: 34rem;
             margin-right: 15rem;
@@ -1131,7 +1154,7 @@ a {
             font-family: Abril Fatface;
             font-style: italic;
             font-weight: normal;
-            font-size: 28px;
+            font-size: calc(1.5*var(--text-main);)
             line-height: 120%;
 
             color: #3a1212;
@@ -1149,7 +1172,7 @@ a {
             border-radius: 50%;
             margin: auto;
             color: var(--main-btn);
-            font-size: 2rem;
+            font-size: var(--text-main);
             box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
       }
       .footer__smm-logo {
@@ -1183,7 +1206,7 @@ a {
             font-family: Josefin Sans;
             font-style: normal;
             font-weight: 600;
-            font-size: 24px;
+            font-size: var(--text-main);
             line-height: 30px;
             text-align: center;
 
@@ -1207,7 +1230,7 @@ a {
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
-            font-size: 22px;
+            font-size: var(--text-main);
             line-height: 30px;
 
             text-align: center;
