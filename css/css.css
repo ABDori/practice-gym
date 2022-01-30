@@ -778,16 +778,14 @@ a {
 
       /* сервисы */
       .services {
-            display: block;
-            height: 59rem;
             position: relative;
+            width: 83%;
       }
       .services__types {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             min-height: 40rem;
-            flex-wrap: wrap;
       }
       .services__type {
             font-family: Alegreya;
@@ -1043,6 +1041,7 @@ a {
       }
       .rep__op {
             margin-left: -6rem;
+            margin-top: 6rem;
 
             max-width: 624px;
             height: 42rem;
@@ -1139,7 +1138,6 @@ a {
 
       .footer__nav {
             min-width: 34rem;
-            margin-right: 15rem;
       }
       .footer__logo {
             display: flex;
