@@ -779,7 +779,7 @@ a {
       .services {
             display: block;
             height: 59rem;
-            margin-bottom: 18rem;
+            position:relative;
       }
       .services__types {
             display: flex;
@@ -824,7 +824,6 @@ a {
             max-width: 50%;
       }
       .services__type--imgbg {
-            width: 100%;
             padding: 6.5rem 0 4.7rem 0;
       }
       .services__type--img {
@@ -900,6 +899,9 @@ a {
       .instr .nav {
             align-self: flex-end;
       }
+      .instr .wrapper{
+            flex-wrap: nowrap;
+      }
       .nav__forward {
             margin: 0.3rem;
             font-size: 3rem;
@@ -973,7 +975,6 @@ a {
             justify-content: space-around;
             align-items: center;
             text-align: center;
-            height: 70rem;
             margin-bottom: 21rem;
       }
       .instr__subheader {
