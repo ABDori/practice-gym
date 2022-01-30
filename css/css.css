@@ -599,20 +599,20 @@ a {
             min-width: 40%;
             flex-wrap: wrap;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: flex-start;
             position: relative;
       }
       .menu-bar {
             display: flex;
             margin: 4rem 0 4rem 0;
-            flex-basis: 80%;
       }
       .menu-bar__list {
             display: flex;
             margin-left: 7rem;
-            flex-basis: fill;
+            align-items: flex-end;
             justify-content: space-evenly;
+            padding-top: 2rem;
       }
 
       .menu-bar__list li {
@@ -630,6 +630,7 @@ a {
             box-sizing: border-box;
             cursor: pointer;
       }
+
       .link::after {
             content: "";
             position: absolute;
@@ -1043,8 +1044,8 @@ a {
             margin-left: -6rem;
             margin-top: 6rem;
 
-            max-width: 624px;
-            height: 42rem;
+            max-width: 62rem;
+            height: 40rem;
 
             background: #ffffff;
             border-radius: 2px 100px 2px 2px;
@@ -1059,10 +1060,7 @@ a {
       }
       .rep__par {
             display: flex;
-            margin: 8rem 7rem 0;
-
-            flex-basis: 50rem;
-            min-height: 19rem;
+            margin: 9rem 7rem 6rem;
 
             font-family: Josefin Sans;
             font-style: italic;
@@ -1076,9 +1074,8 @@ a {
       .rep__op--left {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             min-width: 50rem;
-            min-height: 20rem;
       }
       .rep__op--name {
             display: flex;
