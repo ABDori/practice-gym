@@ -350,7 +350,7 @@ a {
       }
       .container___header-left-text {
             margin-right: 2rem;
-/*             flex-basis: 50rem; */
+            /*             flex-basis: 50rem; */
       }
       h1,
       h2 {
@@ -360,7 +360,6 @@ a {
             text-shadow: 1px 1px 3px #000;
             text-align: center;
       }
-     
 
       .subheader {
             font-family: Josefin Sans;
@@ -382,7 +381,7 @@ a {
             text-align: center;
             margin-bottom: 1rem;
       }
-      .instr__header{
+      .instr__header {
             margin: 0 1.5rem;
       }
       .header__main-header {
@@ -475,7 +474,8 @@ a {
             text-align: justify;
             margin-bottom: 2.2rem;
       }
-      .art .par, .footer__par{
+      .art .par,
+      .footer__par {
             margin: 0 1.5rem;
       }
       .rep-container__right .pics__header,
@@ -540,7 +540,7 @@ a {
             justify-content: space-between;
             margin: 0 2rem 2rem;
       }
-      .footer__menu ul{
+      .footer__menu ul {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -563,21 +563,18 @@ a {
             padding: 0;
             text-align: right;
       }
-      .footer .side_container{
-            margin:0 0 3rem;
+      .footer .side_container {
+            margin: 0 0 3rem;
       }
 }
-
-
 
 /* десктоп-представление */
 
 @media screen and (min-width: 1060px) {
-
       .wrapper {
             flex-wrap: wrap;
             padding: 0;
-            margin-bottom: 5rem;
+            margin-bottom: 15rem;
             max-width: 95vw;
       }
       /* хэдер */
@@ -783,7 +780,7 @@ a {
       .services {
             display: block;
             height: 59rem;
-            position:relative;
+            position: relative;
       }
       .services__types {
             display: flex;
@@ -808,6 +805,7 @@ a {
             max-width: 27rem;
             min-width: 16rem;
             min-height: 28rem;
+            flex-basis: 21%;
 
             text-align: center;
             margin: 3rem auto 0;
@@ -818,7 +816,6 @@ a {
             margin-right: 4rem;
       }
       .services__types--subheader {
-            height: 4rem;
             padding: 0 auto 3rem;
             text-align: center;
       }
@@ -883,7 +880,7 @@ a {
             height: 5rem;
             font-style: normal;
             font-weight: normal;
-            font-size:var(--text-main);
+            font-size: var(--text-main);
             line-height: 120%;
             font-family: Alegreya;
       }
@@ -903,7 +900,7 @@ a {
       .instr .nav {
             align-self: flex-end;
       }
-      .instr .wrapper{
+      .instr .wrapper {
             flex-wrap: nowrap;
       }
       .nav__forward {
@@ -927,7 +924,6 @@ a {
 
       .ex {
             display: flex;
-            margin-bottom: 21rem;
       }
       .ex-container {
             display: flex;
@@ -958,7 +954,6 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 15rem;
       }
       .moods-container__left {
             min-width: 40rem;
@@ -979,7 +974,6 @@ a {
             justify-content: space-around;
             align-items: center;
             text-align: center;
-            margin-bottom: 21rem;
       }
       .instr__subheader {
             padding-bottom: 3rem;
@@ -1030,9 +1024,6 @@ a {
       /* отзывы */
 
       .rep {
-            width: 1169px;
-            height: 719px;
-            margin-bottom: 230px;
       }
       .rep-container {
             display: flex;
@@ -1118,7 +1109,7 @@ a {
             align-items: center;
       }
       .subs {
-            margin: 3rem 0 20rem;
+            margin: 3rem 0 0;
       }
       .art .par {
             max-width: 60rem;
@@ -1145,24 +1136,23 @@ a {
             justify-content: space-between;
             margin: 0 4rem 6rem;
       }
-    
+
       .footer__nav {
             min-width: 34rem;
             margin-right: 15rem;
       }
       .footer__logo {
             display: flex;
+            align-items: center;
       }
       .footer__logo-text {
-            height: 34px;
-
             font-family: Abril Fatface;
             font-style: italic;
             font-weight: normal;
-            font-size: calc(1.5*var(--text-main);)
+            font-size: calc(1.5 * var(--text-main));
             line-height: 120%;
-
-            color: #3a1212;
+            color: var(--main-hdr);
+            margin-left: 2rem;
       }
       .footer__par {
             max-width: 32rem;
@@ -1199,34 +1189,30 @@ a {
       .footer__menu {
             min-width: 15rem;
             min-height: 24rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
       }
       .footer__menu:not(:first-child) {
             margin-left: 10rem;
       }
 
       .footer__menu-head {
-            width: 109px;
-            height: 30px;
-
             font-family: Josefin Sans;
             font-style: normal;
             font-weight: 600;
             font-size: var(--text-main);
-            line-height: 30px;
-            text-align: center;
 
-            color: #3a1212;
+            color: var(--main-hdr);
 
-            margin-bottom: 39px;
             display: block;
       }
       .footer__menu-inner {
             display: flex;
             flex-direction: column;
-            align-items: space-around;
+            align-items: flex-start;
             justify-content: space-around;
-            width: 110px;
-            height: 175px;
+            min-height: 17rem;
       }
       .footer__point {
             width: fit-content;
