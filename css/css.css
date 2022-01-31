@@ -440,14 +440,13 @@ a {
             color: #000000;
       }
       .pics__par {
-            display: block;
+            display: flex;
+            justify-content: center;
             font-family: Alegreya;
             font-style: normal;
             font-weight: normal;
             font-size: var(--text-main);
             line-height: 160%;
-
-            background-color: inherit;
       }
       .rep__par {
             font-family: Alegreya;
