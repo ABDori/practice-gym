@@ -448,6 +448,9 @@ a {
             font-size: var(--text-main);
             line-height: 160%;
       }
+      .instr--pics__item:not(:last-child) {
+            margin-bottom: 2rem;
+      }
       .rep__par {
             font-family: Alegreya;
             font-style: normal;
@@ -482,7 +485,11 @@ a {
             display: flex;
             justify-content: flex-start;
       }
-
+      .subs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+      }
       .mail {
             min-width: 80vw;
             min-height: 5rem;
@@ -492,6 +499,8 @@ a {
             border-radius: 15rem;
             text-align: center;
             font-size: var(--text-main);
+            display: flex;
+            justify-content: center;
       }
       .btn__sbs {
             margin: 0 auto;
