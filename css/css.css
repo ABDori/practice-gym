@@ -209,11 +209,11 @@ a {
             box-shadow: none;
       }
       .cb_cb:checked ~ .icon-bgr::after {
-            transform: rotate(45deg);
+            transform: rotate(225deg);
             top: 0;
       }
       .cb_cb:checked ~ .icon-bgr::before {
-            transform: rotate(-45deg);
+            transform: rotate(-225deg);
             top: 0;
       }
       .menu__icon {
