@@ -24,6 +24,7 @@
 <body>
 
 
+      <div class="container">
             <main class="container__content">
 
                   <!-- верхняя часть -->
@@ -32,16 +33,14 @@
                         <div class="container___header-left">
 
 
-                              <div class="menu-bar">
+                              <nav class="menu-bar">
                                     <a class="logo" href="#">
                                           <img src="icon/gym 1.png" href="#">
                                     </a>
 
-                                    <input class="cb_cb" type="checkbox" id="burger">
-
-                                    <label class="icon-bgr" href="#" for="burger">
-                                          <div class="menu__icon" alt="menu" src=""></div>
-                                    </label>
+                                    <div class="burger__outer">
+                                          <div class="burger"></div>
+                                    </div>
 
 
 
@@ -54,7 +53,7 @@
 
 
 
-                              </div>
+                              </nav>
                               <a class="play">
                                     <div class="header__playbtn"><i class="fa fa-play fa-5x" aria-hidden="true"></i>
                                     </div>
@@ -88,7 +87,7 @@
 
 
                   <!-- сервисы -->
-                  <section class="services">
+                  <section class="services wrapper">
                         <h2 class="subheader services__types--subheader">Our Services</h2>
                         <h1 class="header service__type--header">Awesome Packages That We Offer For Our Clients</h1>
 
@@ -150,10 +149,9 @@
 
 
 
-
                   <!-- упражнения -->
-                  <section class="ex">
-                        <div class="ex-container wrapper">
+                  <section class="ex wrapper">
+                        <div class="ex-container">
 
                               <div class="bgimg">
                                     <img class="img_sizer" src="img/Rectangle 3150.png" alt="">
@@ -322,15 +320,10 @@
                   <footer class="footer wrapper">
                         <div class="side_container footer__nav">
                               <div class="footer__Logo">
-                                    <div>
-                                          <a class="logo" href="#">
-                                                <img src="icon/gym 1.png" href="#">
-                                                <span class="footer__logo-text">Golds Gym</span>
-                                          </a>
-
-                                    </div>
-
-
+                                    <a class="logo" href="#">
+                                          <img src="icon/gym 1.png" href="#">
+                                          <span class="footer__logo-text">Golds Gym</span>
+                                    </a>
                               </div>
 
                               <p class="footer__par par">A Modified Fitness Club that
@@ -402,13 +395,9 @@
                   </footer>
 
 
-
-
-
-
-
             </main>
 
+            <script src="../pr5/js/app.js"></script>
 
 </body>
 
