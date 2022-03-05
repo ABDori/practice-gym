@@ -320,9 +320,7 @@ a {
             width: 100%;
             transform: scaleX(1);
       }
-      .cb {
-            display: none;
-      }
+
       .play {
       }
       .header__playbtn {
@@ -633,9 +631,6 @@ a {
       .link:hover::after {
             width: 100%;
             transform: scaleX(1);
-      }
-      .cb {
-            display: none;
       }
       .play {
             position: absolute;
@@ -1209,8 +1204,5 @@ a {
             text-align: center;
 
             color: #504747;
-      }
-      .cb_cb {
-            display: none;
       }
 }
