@@ -17,6 +17,9 @@ html {
 }
 body {
 }
+body.fixed {
+      overflow: hidden;
+}
 a {
       text-decoration: none;
       color: inherit;
@@ -113,45 +116,51 @@ a {
             order: 0;
             min-width: 90vw;
       }
-      .cb_cb {
-            display: none;
-      }
       .menu-bar__list {
             position: absolute;
-            top: 10%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            top: 0;
+            left: 0;
+            display: none;
 
-            transition: 0.3s ease-out;
+            background-color: #fff;
+
+            height: 100vh;
+            width: 100vw;
+
             overflow: hidden;
             z-index: 10;
             transition: 0.6s ease-in;
       }
-      li {
+      .menu-bar__list.active {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5rem 0;
-            z-index: 20;
+            flex-direction: column;
+            place-content: center;
+            height: 100vh;
+            width: 100vw;
       }
-      li a {
-            font-size: var(--text-main);
+      .menu-bar__list.active li a {
+            font-size: calc(var(--text-main) * 2);
             text-decoration: none;
             display: flex;
-
-            /* text-align: center;
-            width: 80vw; */
+            justify-content: center;
       }
-      li:last-child {
+      .menu-bar__list.active li:last-child {
             border-bottom: none;
             border-right: none;
             box-shadow: none;
       }
 
       /* всё касательно бургера и его поведения */
-      .icon-bgr {
+      .burger__outer {
+            display: flex;
+            height: 6rem;
+            width: 6rem;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            z-index: 30;
+      }
+      .burger {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -165,7 +174,7 @@ a {
             cursor: pointer;
             order: 2;
       }
-      .icon-bgr::after {
+      .burger::after {
             display: block;
             background-color: var(--main-btn);
             box-shadow: 1px 1px rgba(0, 0, 0, 0.35);
@@ -174,10 +183,10 @@ a {
             width: 4rem;
             height: 3px;
             content: "";
-            transition: 0.4s;
+            transition: 0.3s;
             top: -10px;
       }
-      .icon-bgr::before {
+      .burger::before {
             display: block;
             background-color: var(--main-btn);
             box-shadow: 1px 1px rgba(0, 0, 0, 0.35);
@@ -186,33 +195,19 @@ a {
             width: 4rem;
             height: 3px;
             content: "";
-            transition: 0.4s;
+            transition: 0.3s;
             bottom: -10px;
       }
-      .cb_cb:checked ~ .menu-bar__list {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            min-width: 100vw;
-            background: #fffafb;
-            padding: 0;
-            margin: 0;
-            height: 90%;
-      }
-      .cb_cb:not(:checked) ~ .menu-bar__list {
-            display: none;
-            transition: 0.6s ease-in;
-      }
 
-      .cb_cb:checked ~ .icon-bgr {
+      .burger.active {
             background-color: transparent;
             box-shadow: none;
       }
-      .cb_cb:checked ~ .icon-bgr::after {
+      .burger.active::after {
             transform: rotate(225deg);
             top: 0;
       }
-      .cb_cb:checked ~ .icon-bgr::before {
+      .burger.active::before {
             transform: rotate(-225deg);
             top: 0;
       }
@@ -220,11 +215,9 @@ a {
             height: 6rem;
             width: 6rem;
       }
-
       .header {
             text-align: center;
       }
-
       .header__bgimg {
             display: none;
             margin: 7rem auto 0;
@@ -285,10 +278,6 @@ a {
             padding-bottom: 3.3rem;
             cursor: pointer;
       }
-      .nav {
-            display: none;
-      }
-
       .footer__nav {
             display: flex;
             margin-bottom: 3rem;
@@ -303,16 +292,6 @@ a {
             justify-content: space-between;
       }
 
-      .menu-bar__list {
-            display: flex;
-            margin-left: 7rem;
-            flex-basis: fill;
-            justify-content: space-evenly;
-      }
-
-      .menu-bar__list li {
-            margin: 0 3rem 3rem 0;
-      }
       .link {
             display: block;
             font-family: Alegreya;
