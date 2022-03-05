@@ -943,7 +943,7 @@ a {
       }
       .moods-container__left {
             min-width: 40rem;
-            flex-basis: 36%;
+            flex-basis: 35%;
             margin-right: 5rem;
       }
       .moods_par {
@@ -1169,7 +1169,7 @@ a {
             box-shadow: #d8cccc 2px 2px;
       }
       .footer__menu {
-            min-width: 15rem;
+            min-width: 10rem;
             min-height: 24rem;
             display: flex;
             flex-direction: column;
